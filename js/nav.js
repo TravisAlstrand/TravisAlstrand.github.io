@@ -1,6 +1,5 @@
 const navUL = document.getElementById('primary-navigation');
 const navToggle = document.querySelector('.mobile-nav-toggle');
-const navLinks = document.getElementsByClassName('.nav-li');
 
 let navOpen = false;
 

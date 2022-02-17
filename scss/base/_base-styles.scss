@@ -13,7 +13,6 @@ body {
 }
 
 .header {
-    @include flex;
     @include flex-col;
     @include flex-center;
     position: relative;
@@ -23,7 +22,6 @@ body {
 }
 
 .header-text {
-    @include flex;
     @include flex-col;
     @include flex-center;
     position: absolute;
@@ -44,8 +42,6 @@ ul {
     list-style: none;
 }
 
-
-
 .sr-only {
     @include off-screen;
 }
@@ -56,7 +52,6 @@ ul {
 }
 
 .skill-fig {
-    @include flex;
     @include flex-col;
     @include flex-center;
 }
@@ -79,15 +74,24 @@ ul {
     color: $color-primary;
 }
 
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.project-card {
+    @include flex-col;
+    @include flex-center;
+    padding-bottom: 1rem;
+}
+
 .contact-container {
-    @include flex;
     @include flex-col;
     @include flex-center;
     padding-bottom: 1rem;
 }
 
 footer {
-    @include flex;
     @include flex-col;
     @include flex-center;
     background-image: url(../img/fancy-cushion.png);

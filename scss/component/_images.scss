@@ -10,6 +10,21 @@
     border-radius: 50%;
 }
 
+.project-img {
+    max-width: 75%;
+    margin-bottom: 1rem;
+    border: 2px solid $color-primary;
+    border-radius: 5px;
+    opacity: 85%;
+    cursor: pointer;
+    transition: opacity .4s ease, border .4s ease;
+}
+
+.project-img:hover {
+    opacity: 100%;
+    border: 2px solid $color-secondary;
+}
+
 .social-icon {
     width: 30px;
     height: 30px;
