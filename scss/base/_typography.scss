@@ -1,0 +1,34 @@
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: $color-main-font;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3 {
+    color: $color-primary;
+}
+
+a,
+.link-color {
+    text-decoration: none;
+    color: $color-link;
+}
+

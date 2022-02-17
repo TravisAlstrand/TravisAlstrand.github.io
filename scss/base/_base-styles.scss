@@ -1,0 +1,102 @@
+/* ============================================= */
+/*              Base styles                      */
+/* ============================================= */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-background;
+    overflow-x: hidden;
+}
+
+.header {
+    @include flex;
+    @include flex-col;
+    @include flex-center;
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/fancy-cushion.png);
+    box-shadow: 0px 0px 15px 5px inset $color-background;
+}
+
+.header-text {
+    @include flex;
+    @include flex-col;
+    @include flex-center;
+    position: absolute;
+    top: 450px;
+}
+
+a {
+    opacity: .7;
+    transition: opacity .4s;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+
+.sr-only {
+    @include off-screen;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skill-fig {
+    @include flex;
+    @include flex-col;
+    @include flex-center;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.fill {
+    fill: $color-secondary;
+}
+
+.stroke {
+    stroke: $color-secondary;
+}
+
+.skill-figcap {
+    margin-top: .5rem;
+    color: $color-primary;
+}
+
+.contact-container {
+    @include flex;
+    @include flex-col;
+    @include flex-center;
+    padding-bottom: 1rem;
+}
+
+footer {
+    @include flex;
+    @include flex-col;
+    @include flex-center;
+    background-image: url(../img/fancy-cushion.png);
+    box-shadow: 0px 0px 5px 3px inset $color-background;
+    padding-bottom: 25px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    fill: $color-link;
+}

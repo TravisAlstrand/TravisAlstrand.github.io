@@ -1,0 +1,39 @@
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+
+@media (min-width: 768px) {
+    .mobile-nav-toggle {
+        width: 50px;
+    }
+
+    .nav-li {
+        margin-bottom: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .about-me-text {
+        margin: 1rem 7rem;
+    }
+
+    .skills-container {
+        padding: 0 3rem;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .to-top {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1400px) {
+    
+}
