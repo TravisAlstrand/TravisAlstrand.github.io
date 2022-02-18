@@ -720,4 +720,39 @@ a,
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    height: 75vh;
+  }
+  .my-photo {
+    top: 175px;
+    left: 10%;
+  }
+  .header-text {
+    top: 250px;
+    right: 0;
+    left: 0;
+  }
+  .about-me-text {
+    margin: 1rem 10rem;
+  }
+  .skills-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .project-img {
+    max-width: 50%;
+  }
+  .project-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1450px) {
+  .my-photo {
+    left: 25%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

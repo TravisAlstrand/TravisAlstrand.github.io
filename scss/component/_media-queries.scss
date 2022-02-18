@@ -31,9 +31,40 @@
 }
 
 @media (min-width: 1024px) {
+    .header {
+        height: 75vh;
+    }
 
+    .my-photo {
+        top: 175px;
+        left: 10%;
+    }
+
+    .header-text {
+        top: 250px;
+        right: 0;
+        left: 0;
+    }
+
+    .about-me-text {
+        margin: 1rem 10rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-img {
+        max-width: 50%;
+    }
+
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (min-width: 1400px) {
-    
+@media (min-width: 1450px) {
+    .my-photo {
+        left: 25%;
+    }
 }
