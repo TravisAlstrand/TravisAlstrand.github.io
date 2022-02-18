@@ -1,6 +1,6 @@
-const modalBtns = document.querySelectorAll('#project-btn');
+const modalBtns = document.querySelectorAll('.project-img');
 
-const modals = document.querySelectorAll('#project-modal');
+const modals = document.querySelectorAll('.project-modal');
 
 const modalCloseBtn = document.querySelectorAll('.modal-close-btn');
 

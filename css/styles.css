@@ -418,7 +418,7 @@ ul {
 .skills-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  /* -ms-grid-columns: (1fr)[2]; */
       grid-template-columns: repeat(2, 1fr);
 }
 
@@ -591,10 +591,10 @@ a,
   top: 0;
   right: 15px;
   width: 25px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/close-X.svg);
   background-color: transparent;
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
   background-size: contain;
   border: none;
   cursor: pointer;
@@ -642,7 +642,7 @@ a,
   top: 2rem;
   right: 2rem;
   width: 30px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/menu-hamburger.svg);
   background-color: transparent;
   background-repeat: no-repeat;
@@ -709,6 +709,9 @@ a,
   .about-me-text {
     margin: 1rem 7rem;
   }
+  .modal-img {
+    max-width: 60%;
+  }
   .skills-container {
     padding: 0 3rem;
   }
@@ -738,14 +741,14 @@ a,
     margin: 1rem 10rem;
   }
   .skills-container {
-    -ms-grid-columns: (1fr)[3];
+    /* -ms-grid-columns: (1fr)[3]; */
         grid-template-columns: repeat(3, 1fr);
   }
   .project-img {
     max-width: 50%;
   }
   .project-container {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
 }
