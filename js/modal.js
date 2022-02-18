@@ -32,6 +32,12 @@ modalBtns.forEach(btn => {
                     modals[i].style.display = "block";
                 }
             }
+        } else if (target.classList.contains('5')) {
+            for(let i = 0; i < modals.length; i++) {
+                if (modals[i].classList.contains('pm5')) {
+                    modals[i].style.display = "block";
+                }
+            }
         }
     })
 });
