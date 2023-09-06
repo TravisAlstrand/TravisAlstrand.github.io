@@ -1,273 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Travis Alstrand Portfolio</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <header class="header">
-            <img class="my-photo" src="img/ProfilePic2.jpg" alt="photo of Travis Alstrand">
-            <div class="header-text">
-                <p>Hey there, I'm</p>
-                <h1>Travis Alstrand</h1>
-                <p>Front-End Web Developer In The Making</p>
-            </div>
-            <button class="mobile-nav-toggle" 
-                aria-controls="primary-navigation" aria-expanded="false">
-                <span class="sr-only">Menu</span>
-            </button>
-            <nav>
-                <ul id="primary-navigation" class="nav-ul" data-visible="false">
-                    <li class="nav-li">
-                        <span aria-hidden="true" class="link-color">&lt;</span>
-                        <a class="bold" href="#about-me">About Me</a>
-                        <span aria-hidden="true" class="link-color">&sol;&gt;</span>
-                    </li>
-                    <li class="nav-li">
-                        <span aria-hidden="true" class="link-color">&lt;</span>
-                        <a class="bold" href="#coding-projects">Coding Projects</a>
-                        <span aria-hidden="true" class="link-color">&sol;&gt;</span>
-                    </li>
-                    <li class="nav-li">
-                        <span aria-hidden="true" class="link-color">&lt;</span>
-                        <a class="bold" href="#resume">Resume</a>
-                        <span aria-hidden="true" class="link-color">&sol;&gt;</span>
-                    </li>
-                    <li class="nav-li">
-                        <span aria-hidden="true" class="link-color">&lt;</span>
-                        <a class="bold" href="#contact-me">Contact Me</a>
-                        <span aria-hidden="true" class="link-color">&sol;&gt;</span>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travis Alstrand Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="my-photo"
+        src="img/ProfilePic2.jpg"
+        alt="photo of Travis Alstrand"
+      />
+      <div class="header-text">
+        <p>Hey there, I'm</p>
+        <h1>Travis Alstrand</h1>
+        <p>Front-End Web Developer In The Making</p>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primary-navigation" class="nav-ul" data-visible="false">
+          <li class="nav-li">
+            <span aria-hidden="true" class="link-color">&lt;</span>
+            <a class="bold" href="#about-me">About Me</a>
+            <span aria-hidden="true" class="link-color">&sol;&gt;</span>
+          </li>
+          <li class="nav-li">
+            <span aria-hidden="true" class="link-color">&lt;</span>
+            <a class="bold" href="#coding-projects">Coding Projects</a>
+            <span aria-hidden="true" class="link-color">&sol;&gt;</span>
+          </li>
+          <li class="nav-li">
+            <span aria-hidden="true" class="link-color">&lt;</span>
+            <a class="bold" href="#resume">Resume</a>
+            <span aria-hidden="true" class="link-color">&sol;&gt;</span>
+          </li>
+          <li class="nav-li">
+            <span aria-hidden="true" class="link-color">&lt;</span>
+            <a class="bold" href="#contact-me">Contact Me</a>
+            <span aria-hidden="true" class="link-color">&sol;&gt;</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <hr />
 
-            <hr>
+      <!-- about me section -->
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p class="about-me-text">
+          I'm currently learning Front-End Web Development through
+          <a
+            class="text-link bold"
+            href="https://teamtreehouse.com"
+            target="_blank"
+            >Team Treehouse</a
+          >'s FEWD Tech Degree program. I'm learning C# with the game engine
+          Unity on the side as well. I want to keep growing my knowledge of web
+          development and start a career in the field.
+        </p>
 
-            <!-- about me section -->
-            <section id="about-me">
-                <h2>About Me</h2>
-                <p class="about-me-text">I'm currently learning Front-End Web Development through 
-                    <a class="text-link bold" href="https://teamtreehouse.com" target="_blank">Team Treehouse</a>'s 
-                    FEWD Tech Degree program. I'm learning C# with the game engine Unity on the side as well. I want to keep growing my knowledge of web development and start a 
-                    career in the field.
-                </p>
-
-                <h3>Skills</h3>
-                <div class="skills-container">
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" class="skill-icon fill">
-                            <path d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">HTML 5</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" class="skill-icon fill">
-                            <path d="M0.5 0.5V0C0.360174 0 0.226736 0.0585498 0.132059 0.161445C0.0373814 0.264341 -0.00988477 0.40218 0.00172713 0.541523L0.5 0.5ZM14.5 0.5L14.9983 0.541523C15.0099 0.40218 14.9626 0.264341 14.8679 0.161445C14.7733 0.0585498 14.6398 0 14.5 0V0.5ZM13.5 12.5L13.6581 12.9743C13.8479 12.9111 13.9817 12.7408 13.9983 12.5415L13.5 12.5ZM7.5 14.5L7.34189 14.9743C7.44452 15.0086 7.55548 15.0086 7.65811 14.9743L7.5 14.5ZM1.5 12.5L1.00173 12.5415C1.01834 12.7408 1.15214 12.9111 1.34189 12.9743L1.5 12.5ZM10.5 3.5H11V3H10.5V3.5ZM10.5 9.5L10.6581 9.97434L11 9.86038V9.5H10.5ZM7.5 10.5L7.34189 10.9743L7.5 11.027L7.65811 10.9743L7.5 10.5ZM4.5 9.5H4V9.86038L4.34189 9.97434L4.5 9.5ZM0.5 1H14.5V0H0.5V1ZM14.0017 0.458477L13.0017 12.4585L13.9983 12.5415L14.9983 0.541523L14.0017 0.458477ZM13.3419 12.0257L7.34189 14.0257L7.65811 14.9743L13.6581 12.9743L13.3419 12.0257ZM7.65811 14.0257L1.65811 12.0257L1.34189 12.9743L7.34189 14.9743L7.65811 14.0257ZM1.99827 12.4585L0.998273 0.458477L0.00172713 0.541523L1.00173 12.5415L1.99827 12.4585ZM10.5 3H4V4H10.5V3ZM6 7H10.5V6H6V7ZM10 6.5V9.5H11V6.5H10ZM10.3419 9.02566L7.34189 10.0257L7.65811 10.9743L10.6581 9.97434L10.3419 9.02566ZM7.65811 10.0257L4.65811 9.02566L4.34189 9.97434L7.34189 10.9743L7.65811 10.0257ZM5 9.5V8H4V9.5H5ZM10 3.5V6.5H11V3.5H10Z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">CSS 3</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill-icon">
-                            <path class="stroke" d="M12.5 8V7.83333C12.5 7.09695 11.903 6.5 11.1667 6.5H10C9.17157 6.5 8.5 7.17157 8.5 8C8.5 8.82843 9.17157 9.5 10 9.5H11C11.8284 9.5 12.5 10.1716 12.5 11C12.5 11.8284 11.8284 12.5 11 12.5H10C9.17157 12.5 8.5 11.8284 8.5 11M6.5 6V11C6.5 11.8284 5.82843 12.5 5 12.5C4.17157 12.5 3.5 11.8284 3.5 11M0.5 0.5H14.5V14.5H0.5V0.5Z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">JAVASCRIPT</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 -4 32 32" xmlns="http://www.w3.org/2000/svg" class="skill-icon fill">
-                            <path d="m27.533 13.796c.039-.001.085-.002.132-.002.834 0 1.623.194 2.323.54l-.031-.014c.638.311 1.162.771 1.541 1.335l.009.014c.299.436.477.975.477 1.555 0 .042-.001.084-.003.125v-.006c-.031.579-.294 1.09-.698 1.448l-.002.002c-.221.217-.488.387-.785.495l-.015.005q-.25.05-.275-.075t.225-.275c.452-.274.779-.716.898-1.237l.003-.013c.003-.042.005-.091.005-.141 0-.311-.074-.605-.205-.865l.005.011c-.217-.453-.541-.825-.94-1.094l-.01-.006c-.597-.384-1.313-.636-2.083-.699l-.016-.001c-.262-.039-.564-.061-.872-.061-.801 0-1.566.151-2.27.426l.042-.015c.145.339.236.732.249 1.144v.005c-.016.845-.47 1.58-1.145 1.99l-.011.006c-.31.22-.664.413-1.041.563l-.035.012c-.229.112-.498.177-.782.177-.033 0-.065-.001-.097-.003h.005q-.949-.199-.45-1.65c.145-.421.348-.786.605-1.107l-.006.007c.329-.43.69-.807 1.089-1.141l.011-.009-.098-.146c-.183-.312-.351-.675-.486-1.054l-.014-.046q-.15-.5-.25-.949l-.05-.35-.5.949q-.65 1.2-1.25 2.099l-.15.25c.168.408.292.881.348 1.375l.002.025c.004.047.006.103.006.159 0 .758-.374 1.428-.948 1.837l-.007.005c-.274.169-.601.344-.94.5l-.06.025c-.353.153-.762.253-1.191.275h-.009c-.033.002-.072.004-.111.004-.25 0-.487-.057-.699-.158l.01.004c-.127-.109-.207-.269-.207-.448 0-.091.021-.178.058-.255l-.002.004c.4-.561.794-1.049 1.213-1.515l-.013.015 1.1-1.399-.199-.45c-.16-.294-.313-.641-.436-1.001l-.014-.048q-.15-.5-.25-.949l-.05-.35-.5 1.2q-.599 1.399-1.1 2.399-.747 1.5-1.25 2.3l-.1.15q-.599.949-1.15.949t-.747-.7c-.096-.344-.152-.739-.152-1.147 0-.036 0-.072.001-.108v.005l.1-.7v.05q-.4.949-.8 1.749c-.177.346-.359.641-.563.919l.013-.019c-.206.216-.496.35-.817.35-.003 0-.005 0-.008 0-.021.002-.045.002-.069.002-.253 0-.483-.096-.657-.253l.001.001c-.349-.358-.608-.805-.742-1.304l-.005-.021c-.164-.455-.258-.981-.258-1.529 0-.071.002-.141.005-.21v.01c.079-.796.238-1.525.471-2.22l-.021.071-1.799 1.05v.05c.261.542.414 1.178.414 1.85 0 .123-.005.245-.015.365l.001-.016c-.053 1.03-.382 1.973-.913 2.77l.013-.02c-.557.884-1.36 1.567-2.314 1.962l-.033.012c-.537.241-1.165.382-1.825.382-.418 0-.824-.056-1.208-.162l.032.007c-.318-.107-.578-.319-.743-.593l-.003-.006c-.233-.338-.38-.751-.403-1.196v-.006c-.011-.101-.017-.218-.017-.337 0-.513.117-.999.326-1.432l-.009.02c.574-.979 1.368-1.772 2.316-2.33l.03-.016c.671-.465 1.442-.916 2.247-1.309l.106-.047.25-.15q-.45-.35-1.65-1.2c-1.069-.716-1.998-1.439-2.874-2.221l.025.022c-.847-.729-1.464-1.703-1.741-2.812l-.008-.038c-.026-.154-.041-.331-.041-.511 0-.564.145-1.094.399-1.555l-.008.017c.56-1.204 1.336-2.219 2.288-3.035l.012-.01c1.03-.973 2.196-1.82 3.462-2.506l.087-.043c1.131-.653 2.452-1.26 3.829-1.747l.17-.052c1.279-.468 2.756-.742 4.296-.747h.002c.07-.002.153-.004.236-.004 1.241 0 2.415.287 3.459.798l-.046-.021c.9.41 1.574 1.182 1.844 2.126l.006.024c.083.322.13.692.13 1.073 0 .632-.131 1.234-.366 1.78l.011-.029c-.428 1.037-1.037 1.92-1.797 2.647l-.003.003c-.77.763-1.693 1.373-2.718 1.78l-.055.019c-1.074.461-2.321.751-3.63.799l-.019.001c-.192.022-.414.034-.639.034-.592 0-1.163-.085-1.703-.244l.043.011c-.483-.154-.9-.393-1.254-.703l.004.003c-.248-.202-.45-.451-.594-.734l-.006-.013q-.15-.4-.025-.475t.175-.025l.25.25c.279.259.612.463.98.593l.02.006c.506.176 1.09.278 1.697.278.195 0 .387-.01.576-.031l-.023.002c1.618-.191 3.077-.743 4.336-1.573l-.037.023c1.064-.633 1.925-1.503 2.531-2.54l.018-.034c.301-.442.481-.988.481-1.576 0-.361-.068-.707-.192-1.025l.007.019c-.374-.591-.979-1.007-1.685-1.122l-.014-.002c-.548-.135-1.178-.213-1.825-.213-.521 0-1.031.05-1.524.146l.05-.008c-1.687.304-3.195.825-4.586 1.541l.091-.043q-6.148 3.1-6.349 6.349v.049c0 .873.343 1.666.902 2.252l-.001-.001c.637.708 1.341 1.333 2.11 1.873l.039.026c.701.524 1.321 1.065 1.898 1.649l.001.002.1.1 3.2-1.749c.365-.528.804-.974 1.308-1.334l.016-.011c.4-.336.908-.555 1.465-.599l.009-.001c.02-.002.043-.002.067-.002.373 0 .693.225.831.547l.002.006c.105.235.166.51.166.799 0 .088-.006.175-.017.261l.001-.01-.097.493.15-.1c.104-.079.235-.126.377-.126.09 0 .175.019.252.053l-.004-.002c.192.05.331.222.331.426 0 .035-.004.069-.012.102l.001-.003-.15.55q-.45 1.799-.599 2.599c-.05.173-.078.372-.078.578 0 .043.001.085.004.127v-.006q.025.3.075.3t.199-.3l.15-.35q.05 0 0 .05l.55-1.15q1.95-4.298 2.099-4.8l.3-.949q.05-.1.4-.199c.237-.064.508-.101.788-.101.023 0 .046 0 .068.001h-.003q.7 0 .7.35l-.05.25c-.112.308-.223.693-.309 1.087l-.011.063c-.02.129-.032.277-.032.429 0 .202.02.399.059.59l-.003-.019.05.199c.102.417.257.783.46 1.117l-.01-.017q.599-.999 1.15-2.049c.29-.483.56-1.043.777-1.629l.023-.07c.075-.377.161-.695.266-1.005l-.016.056q.05-.15.427-.225c.238-.048.511-.075.79-.075h.036-.002q.7 0 .747.35l-.1.199c-.119.336-.223.74-.293 1.155l-.006.045c-.009.097-.015.209-.015.323 0 .239.024.473.069.699l-.004-.023v.199c.115.436.286.819.51 1.166l-.01-.016.15.35c.835-.41 1.817-.65 2.855-.65h.039-.002zm-21.439 7.253c.695-.718 1.124-1.698 1.124-2.778 0-.417-.064-.819-.182-1.197l.008.028-.8.5c-.816.465-1.522.984-2.161 1.574l.008-.007c-.485.446-.843 1.023-1.019 1.674l-.006.025q-.225.925.225 1.2c.183.084.398.133.623.133.246 0 .479-.058.684-.162l-.009.004c.594-.216 1.097-.559 1.497-.998l.003-.003zm6.697-4.604q.25-.65.55-1.55.4-1.2.275-1.399t-.475-.05c-.278.135-.511.32-.697.547l-.003.004c-.208.263-.406.557-.582.866l-.018.034c-.202.331-.373.712-.492 1.116l-.009.034c-.193.523-.305 1.128-.305 1.758 0 .085.002.169.006.253v-.012q.05.999.32 1.075t.625-.725c.229-.413.433-.893.585-1.396l.014-.054q.149-.354.204-.501zm5.546 2.65c.693-.311 1.181-.966 1.249-1.741l.001-.008v-.05l-.55.7-.999 1.1c-.015.012-.025.03-.025.05 0 .02.01.038.024.05q.048.049.3-.1zm4.299-.95c.756-.216 1.3-.901 1.3-1.712 0-.013 0-.026 0-.039v.002c-.01-.2-.046-.388-.105-.566l.004.015c-.389.346-.708.76-.939 1.227l-.011.023q-.451.899-.252 1.048z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">SASS</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="skill-icon">
-                            <path class="stroke" d="M9.5 5V10M11.5 5V10M8 6.5H13M8 8.5H13M8 10L7.59787 10.2011C7.20469 10.3977 6.77114 10.5 6.33156 10.5C4.76773 10.5 3.5 9.23227 3.5 7.66844V7.33156C3.5 5.76773 4.76773 4.5 6.33156 4.5C6.77114 4.5 7.20469 4.60235 7.59787 4.79894L8 5M1.5 10.5V4.5L7.5 1L13.5 4.5V10.5L7.5 14L1.5 10.5Z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">C#</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="skill-icon fill">
-                            <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
-                            <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">BOOTSTRAP</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                            viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve" class="skill-icon fill">
-                            <g><path d="M145.66,0C65.219,0,0,65.219,0,145.66c0,80.45,65.219,145.66,145.66,145.66
+        <h3>Skills</h3>
+        <div class="skills-container">
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 1024 1024"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon fill"
+            >
+              <path
+                d="M145 96l66 746.6L511.8 928l299.6-85.4L878.7 96H145zm610.9 700.6l-244.1 69.6-245.2-69.6-56.7-641.2h603.8l-57.8 641.2zM281 249l1.7 24.3 22.7 253.5h206.5v-.1h112.9l-11.4 118.5L511 672.9v.2h-.8l-102.4-27.7-6.5-73.2h-91l11.3 144.7 188.6 52h1.7v-.4l187.7-51.7 1.7-16.3 21.2-242.2 3.2-24.3H511v.2H389.9l-8.2-94.2h352.1l1.7-19.5 4.8-47.2L742 249H511z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">HTML 5</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 15 15"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon fill"
+            >
+              <path
+                d="M0.5 0.5V0C0.360174 0 0.226736 0.0585498 0.132059 0.161445C0.0373814 0.264341 -0.00988477 0.40218 0.00172713 0.541523L0.5 0.5ZM14.5 0.5L14.9983 0.541523C15.0099 0.40218 14.9626 0.264341 14.8679 0.161445C14.7733 0.0585498 14.6398 0 14.5 0V0.5ZM13.5 12.5L13.6581 12.9743C13.8479 12.9111 13.9817 12.7408 13.9983 12.5415L13.5 12.5ZM7.5 14.5L7.34189 14.9743C7.44452 15.0086 7.55548 15.0086 7.65811 14.9743L7.5 14.5ZM1.5 12.5L1.00173 12.5415C1.01834 12.7408 1.15214 12.9111 1.34189 12.9743L1.5 12.5ZM10.5 3.5H11V3H10.5V3.5ZM10.5 9.5L10.6581 9.97434L11 9.86038V9.5H10.5ZM7.5 10.5L7.34189 10.9743L7.5 11.027L7.65811 10.9743L7.5 10.5ZM4.5 9.5H4V9.86038L4.34189 9.97434L4.5 9.5ZM0.5 1H14.5V0H0.5V1ZM14.0017 0.458477L13.0017 12.4585L13.9983 12.5415L14.9983 0.541523L14.0017 0.458477ZM13.3419 12.0257L7.34189 14.0257L7.65811 14.9743L13.6581 12.9743L13.3419 12.0257ZM7.65811 14.0257L1.65811 12.0257L1.34189 12.9743L7.34189 14.9743L7.65811 14.0257ZM1.99827 12.4585L0.998273 0.458477L0.00172713 0.541523L1.00173 12.5415L1.99827 12.4585ZM10.5 3H4V4H10.5V3ZM6 7H10.5V6H6V7ZM10 6.5V9.5H11V6.5H10ZM10.3419 9.02566L7.34189 10.0257L7.65811 10.9743L10.6581 9.97434L10.3419 9.02566ZM7.65811 10.0257L4.65811 9.02566L4.34189 9.97434L7.34189 10.9743L7.65811 10.0257ZM5 9.5V8H4V9.5H5ZM10 3.5V6.5H11V3.5H10Z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">CSS 3</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon"
+            >
+              <path
+                class="stroke"
+                d="M12.5 8V7.83333C12.5 7.09695 11.903 6.5 11.1667 6.5H10C9.17157 6.5 8.5 7.17157 8.5 8C8.5 8.82843 9.17157 9.5 10 9.5H11C11.8284 9.5 12.5 10.1716 12.5 11C12.5 11.8284 11.8284 12.5 11 12.5H10C9.17157 12.5 8.5 11.8284 8.5 11M6.5 6V11C6.5 11.8284 5.82843 12.5 5 12.5C4.17157 12.5 3.5 11.8284 3.5 11M0.5 0.5H14.5V14.5H0.5V0.5Z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">JAVASCRIPT</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 -4 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon fill"
+            >
+              <path
+                d="m27.533 13.796c.039-.001.085-.002.132-.002.834 0 1.623.194 2.323.54l-.031-.014c.638.311 1.162.771 1.541 1.335l.009.014c.299.436.477.975.477 1.555 0 .042-.001.084-.003.125v-.006c-.031.579-.294 1.09-.698 1.448l-.002.002c-.221.217-.488.387-.785.495l-.015.005q-.25.05-.275-.075t.225-.275c.452-.274.779-.716.898-1.237l.003-.013c.003-.042.005-.091.005-.141 0-.311-.074-.605-.205-.865l.005.011c-.217-.453-.541-.825-.94-1.094l-.01-.006c-.597-.384-1.313-.636-2.083-.699l-.016-.001c-.262-.039-.564-.061-.872-.061-.801 0-1.566.151-2.27.426l.042-.015c.145.339.236.732.249 1.144v.005c-.016.845-.47 1.58-1.145 1.99l-.011.006c-.31.22-.664.413-1.041.563l-.035.012c-.229.112-.498.177-.782.177-.033 0-.065-.001-.097-.003h.005q-.949-.199-.45-1.65c.145-.421.348-.786.605-1.107l-.006.007c.329-.43.69-.807 1.089-1.141l.011-.009-.098-.146c-.183-.312-.351-.675-.486-1.054l-.014-.046q-.15-.5-.25-.949l-.05-.35-.5.949q-.65 1.2-1.25 2.099l-.15.25c.168.408.292.881.348 1.375l.002.025c.004.047.006.103.006.159 0 .758-.374 1.428-.948 1.837l-.007.005c-.274.169-.601.344-.94.5l-.06.025c-.353.153-.762.253-1.191.275h-.009c-.033.002-.072.004-.111.004-.25 0-.487-.057-.699-.158l.01.004c-.127-.109-.207-.269-.207-.448 0-.091.021-.178.058-.255l-.002.004c.4-.561.794-1.049 1.213-1.515l-.013.015 1.1-1.399-.199-.45c-.16-.294-.313-.641-.436-1.001l-.014-.048q-.15-.5-.25-.949l-.05-.35-.5 1.2q-.599 1.399-1.1 2.399-.747 1.5-1.25 2.3l-.1.15q-.599.949-1.15.949t-.747-.7c-.096-.344-.152-.739-.152-1.147 0-.036 0-.072.001-.108v.005l.1-.7v.05q-.4.949-.8 1.749c-.177.346-.359.641-.563.919l.013-.019c-.206.216-.496.35-.817.35-.003 0-.005 0-.008 0-.021.002-.045.002-.069.002-.253 0-.483-.096-.657-.253l.001.001c-.349-.358-.608-.805-.742-1.304l-.005-.021c-.164-.455-.258-.981-.258-1.529 0-.071.002-.141.005-.21v.01c.079-.796.238-1.525.471-2.22l-.021.071-1.799 1.05v.05c.261.542.414 1.178.414 1.85 0 .123-.005.245-.015.365l.001-.016c-.053 1.03-.382 1.973-.913 2.77l.013-.02c-.557.884-1.36 1.567-2.314 1.962l-.033.012c-.537.241-1.165.382-1.825.382-.418 0-.824-.056-1.208-.162l.032.007c-.318-.107-.578-.319-.743-.593l-.003-.006c-.233-.338-.38-.751-.403-1.196v-.006c-.011-.101-.017-.218-.017-.337 0-.513.117-.999.326-1.432l-.009.02c.574-.979 1.368-1.772 2.316-2.33l.03-.016c.671-.465 1.442-.916 2.247-1.309l.106-.047.25-.15q-.45-.35-1.65-1.2c-1.069-.716-1.998-1.439-2.874-2.221l.025.022c-.847-.729-1.464-1.703-1.741-2.812l-.008-.038c-.026-.154-.041-.331-.041-.511 0-.564.145-1.094.399-1.555l-.008.017c.56-1.204 1.336-2.219 2.288-3.035l.012-.01c1.03-.973 2.196-1.82 3.462-2.506l.087-.043c1.131-.653 2.452-1.26 3.829-1.747l.17-.052c1.279-.468 2.756-.742 4.296-.747h.002c.07-.002.153-.004.236-.004 1.241 0 2.415.287 3.459.798l-.046-.021c.9.41 1.574 1.182 1.844 2.126l.006.024c.083.322.13.692.13 1.073 0 .632-.131 1.234-.366 1.78l.011-.029c-.428 1.037-1.037 1.92-1.797 2.647l-.003.003c-.77.763-1.693 1.373-2.718 1.78l-.055.019c-1.074.461-2.321.751-3.63.799l-.019.001c-.192.022-.414.034-.639.034-.592 0-1.163-.085-1.703-.244l.043.011c-.483-.154-.9-.393-1.254-.703l.004.003c-.248-.202-.45-.451-.594-.734l-.006-.013q-.15-.4-.025-.475t.175-.025l.25.25c.279.259.612.463.98.593l.02.006c.506.176 1.09.278 1.697.278.195 0 .387-.01.576-.031l-.023.002c1.618-.191 3.077-.743 4.336-1.573l-.037.023c1.064-.633 1.925-1.503 2.531-2.54l.018-.034c.301-.442.481-.988.481-1.576 0-.361-.068-.707-.192-1.025l.007.019c-.374-.591-.979-1.007-1.685-1.122l-.014-.002c-.548-.135-1.178-.213-1.825-.213-.521 0-1.031.05-1.524.146l.05-.008c-1.687.304-3.195.825-4.586 1.541l.091-.043q-6.148 3.1-6.349 6.349v.049c0 .873.343 1.666.902 2.252l-.001-.001c.637.708 1.341 1.333 2.11 1.873l.039.026c.701.524 1.321 1.065 1.898 1.649l.001.002.1.1 3.2-1.749c.365-.528.804-.974 1.308-1.334l.016-.011c.4-.336.908-.555 1.465-.599l.009-.001c.02-.002.043-.002.067-.002.373 0 .693.225.831.547l.002.006c.105.235.166.51.166.799 0 .088-.006.175-.017.261l.001-.01-.097.493.15-.1c.104-.079.235-.126.377-.126.09 0 .175.019.252.053l-.004-.002c.192.05.331.222.331.426 0 .035-.004.069-.012.102l.001-.003-.15.55q-.45 1.799-.599 2.599c-.05.173-.078.372-.078.578 0 .043.001.085.004.127v-.006q.025.3.075.3t.199-.3l.15-.35q.05 0 0 .05l.55-1.15q1.95-4.298 2.099-4.8l.3-.949q.05-.1.4-.199c.237-.064.508-.101.788-.101.023 0 .046 0 .068.001h-.003q.7 0 .7.35l-.05.25c-.112.308-.223.693-.309 1.087l-.011.063c-.02.129-.032.277-.032.429 0 .202.02.399.059.59l-.003-.019.05.199c.102.417.257.783.46 1.117l-.01-.017q.599-.999 1.15-2.049c.29-.483.56-1.043.777-1.629l.023-.07c.075-.377.161-.695.266-1.005l-.016.056q.05-.15.427-.225c.238-.048.511-.075.79-.075h.036-.002q.7 0 .747.35l-.1.199c-.119.336-.223.74-.293 1.155l-.006.045c-.009.097-.015.209-.015.323 0 .239.024.473.069.699l-.004-.023v.199c.115.436.286.819.51 1.166l-.01-.016.15.35c.835-.41 1.817-.65 2.855-.65h.039-.002zm-21.439 7.253c.695-.718 1.124-1.698 1.124-2.778 0-.417-.064-.819-.182-1.197l.008.028-.8.5c-.816.465-1.522.984-2.161 1.574l.008-.007c-.485.446-.843 1.023-1.019 1.674l-.006.025q-.225.925.225 1.2c.183.084.398.133.623.133.246 0 .479-.058.684-.162l-.009.004c.594-.216 1.097-.559 1.497-.998l.003-.003zm6.697-4.604q.25-.65.55-1.55.4-1.2.275-1.399t-.475-.05c-.278.135-.511.32-.697.547l-.003.004c-.208.263-.406.557-.582.866l-.018.034c-.202.331-.373.712-.492 1.116l-.009.034c-.193.523-.305 1.128-.305 1.758 0 .085.002.169.006.253v-.012q.05.999.32 1.075t.625-.725c.229-.413.433-.893.585-1.396l.014-.054q.149-.354.204-.501zm5.546 2.65c.693-.311 1.181-.966 1.249-1.741l.001-.008v-.05l-.55.7-.999 1.1c-.015.012-.025.03-.025.05 0 .02.01.038.024.05q.048.049.3-.1zm4.299-.95c.756-.216 1.3-.901 1.3-1.712 0-.013 0-.026 0-.039v.002c-.01-.2-.046-.388-.105-.566l.004.015c-.389.346-.708.76-.939 1.227l-.011.023q-.451.899-.252 1.048z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">SASS</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon"
+            >
+              <path
+                class="stroke"
+                d="M9.5 5V10M11.5 5V10M8 6.5H13M8 8.5H13M8 10L7.59787 10.2011C7.20469 10.3977 6.77114 10.5 6.33156 10.5C4.76773 10.5 3.5 9.23227 3.5 7.66844V7.33156C3.5 5.76773 4.76773 4.5 6.33156 4.5C6.77114 4.5 7.20469 4.60235 7.59787 4.79894L8 5M1.5 10.5V4.5L7.5 1L13.5 4.5V10.5L7.5 14L1.5 10.5Z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">C#</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon fill"
+            >
+              <path
+                d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"
+              />
+              <path
+                d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">BOOTSTRAP</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 291.32 291.32"
+              style="enable-background: new 0 0 291.32 291.32"
+              xml:space="preserve"
+              class="skill-icon fill"
+            >
+              <g>
+                <path
+                  d="M145.66,0C65.219,0,0,65.219,0,145.66c0,80.45,65.219,145.66,145.66,145.66
                                     s145.66-65.21,145.66-145.66C291.319,65.219,226.1,0,145.66,0z M186.462,256.625c-0.838-11.398-1.775-25.518-1.83-31.235		c-0.364-4.388-0.838-15.549-11.434-22.677c42.068-3.523,62.087-26.774,63.526-57.499c1.202-17.497-5.754-32.883-18.107-45.3		c0.628-13.282-0.401-29.023-1.256-35.941c-9.486-2.731-31.608,8.949-37.79,13.947c-13.037-5.062-44.945-6.837-64.336,0		c-13.747-9.668-29.396-15.64-37.926-13.974c-7.875,17.452-2.813,33.948-1.275,35.914c-10.142,9.268-24.289,20.675-20.447,44.572
                                     c6.163,35.04,30.816,53.94,70.508,58.564c-8.466,1.73-9.896,8.048-10.606,10.788c-26.656,10.997-34.275-6.791-37.644-11.425		c-11.188-13.847-21.23-9.832-21.849-9.614c-0.601,0.218-1.056,1.092-0.992,1.511c0.564,2.986,6.655,6.018,6.955,6.263		c8.257,6.154,11.316,17.27,13.2,20.438c11.844,19.473,39.374,11.398,39.638,11.562c0.018,1.702-0.191,16.032-0.355,27.184		C64.245,245.992,27.311,200.2,27.311,145.66c0-65.365,52.984-118.348,118.348-118.348S264.008,80.295,264.008,145.66
-                                    C264.008,196.668,231.69,239.992,186.462,256.625z"/></g>
-                        </svg>
-                        <figcaption class="skill-figcap">GITHUB</figcaption>
-                    </figure>
-                    <figure class="skill-fig">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="skill-icon fill">
-                            <path d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z"/>
-                            <path d="M4.11555 11.9367L0.228273 15.5089C0.228273 15.5089 -0.171172 15.8093 0.228273 16.346L2.03308 18.0053C2.03308 18.0053 2.46175 18.4706 3.09502 17.9413L7.21611 14.7827L4.11555 11.9367Z" />
-                            <path d="M10.94 11.9661L18.0691 6.46362L18.0228 0.95865C18.0228 0.95865 17.7183 -0.242793 16.7027 0.382548L7.21589 9.11025L10.94 11.9661Z"/>
-                            <path d="M16.9121 23.69C17.3261 24.1183 17.8279 23.978 17.8279 23.978L23.3838 21.2108C24.0951 20.7208 23.9952 20.1127 23.9952 20.1127V3.58803C23.9952 2.86175 23.2596 2.61063 23.2596 2.61063L18.4441 0.264377C17.3919 -0.392968 16.7027 0.382548 16.7027 0.382548C16.7027 0.382548 17.5892 -0.262484 18.0228 0.95865L18.0228 22.8086C18.0228 22.9588 17.9911 23.1065 17.9278 23.2394C17.8011 23.4979 17.5259 23.7392 16.8658 23.6383L16.9121 23.69Z"/>
-                        </svg>
-                        <figcaption class="skill-figcap">VS CODE</figcaption>
-                    </figure>
-                </div>
-            </section>
+                                    C264.008,196.668,231.69,239.992,186.462,256.625z"
+                />
+              </g>
+            </svg>
+            <figcaption class="skill-figcap">GITHUB</figcaption>
+          </figure>
+          <figure class="skill-fig">
+            <svg
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="skill-icon fill"
+            >
+              <path
+                d="M0.228341 8.36915C0.228341 8.36915 -0.356212 7.94324 0.345251 7.37453L1.97956 5.89736C1.97956 5.89736 2.44721 5.40004 2.94164 5.83334L18.0231 17.375V22.9094C18.0231 22.9094 18.0158 23.7785 16.9124 23.6825L0.228341 8.36915Z"
+              />
+              <path
+                d="M4.11555 11.9367L0.228273 15.5089C0.228273 15.5089 -0.171172 15.8093 0.228273 16.346L2.03308 18.0053C2.03308 18.0053 2.46175 18.4706 3.09502 17.9413L7.21611 14.7827L4.11555 11.9367Z"
+              />
+              <path
+                d="M10.94 11.9661L18.0691 6.46362L18.0228 0.95865C18.0228 0.95865 17.7183 -0.242793 16.7027 0.382548L7.21589 9.11025L10.94 11.9661Z"
+              />
+              <path
+                d="M16.9121 23.69C17.3261 24.1183 17.8279 23.978 17.8279 23.978L23.3838 21.2108C24.0951 20.7208 23.9952 20.1127 23.9952 20.1127V3.58803C23.9952 2.86175 23.2596 2.61063 23.2596 2.61063L18.4441 0.264377C17.3919 -0.392968 16.7027 0.382548 16.7027 0.382548C16.7027 0.382548 17.5892 -0.262484 18.0228 0.95865L18.0228 22.8086C18.0228 22.9588 17.9911 23.1065 17.9278 23.2394C17.8011 23.4979 17.5259 23.7392 16.8658 23.6383L16.9121 23.69Z"
+              />
+            </svg>
+            <figcaption class="skill-figcap">VS CODE</figcaption>
+          </figure>
+        </div>
+      </section>
 
-            <hr>
+      <hr />
 
-            <!-- coding projects section -->
-            <section id="coding-projects">
-                <h2>My Coding Projects</h2>
-                <div class="project-container">
-                    <div class="project-card">
-                        <img class="project-img 1" src="img/Web-App-Project.png" alt="Screen shot of web app project">
-                        <p>Web App Project</p>
-                    </div>
+      <!-- coding projects section -->
+      <section id="coding-projects">
+        <h2>My Coding Projects</h2>
+        <div class="project-container">
+          <div class="project-card">
+            <img
+              class="project-img 1"
+              src="img/FEWD-P7.png"
+              alt="Screen shot of web app project"
+            />
+            <p>Web App Project</p>
+          </div>
 
-                    <div id="project1" class="project-modal pm1" style="display:none">
-                        <div class="modal-content-container">
-                            <h3>Web App Project</h3>
-                            <button class="modal-close-btn" 
-                                aria-controls="project1">
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <img class="modal-img" src="img/Web-App-Project.png" alt="Screen shot of web app project">
-                            <p>A mock-up of a responsive web application similar to Facebook.</p>
-                            <p>Utilizes HTML, CSS, JAVASCRIPT, CHART.JS and CSS-TOGGLE-SWITCH.</p>
-                            <div class="modal-links">
-                                <a href="https://travisalstrand.github.io/techdegree-project-7/" target="_blank">See the Project</a>
-                                <a href="https://github.com/TravisAlstrand/techdegree-project-7" target="_blank">See the Code</a>
-                            </div>
-                        </div>
-                    </div>
+          <div id="project1" class="project-modal pm1" style="display: none">
+            <div class="modal-content-container">
+              <h3>Web App Project</h3>
+              <button class="modal-close-btn" aria-controls="project1">
+                <span class="sr-only">Close</span>
+              </button>
+              <img
+                class="modal-img"
+                src="img/FEWD-P7.png"
+                alt="Screen shot of web app project"
+              />
+              <p>
+                A mock-up of a responsive web application similar to Facebook.
+              </p>
+              <p>
+                Utilizes HTML, CSS, JAVASCRIPT, CHART.JS and CSS-TOGGLE-SWITCH.
+              </p>
+              <div class="modal-links">
+                <a
+                  href="https://travisalstrand.github.io/FEWD_7.2/"
+                  target="_blank"
+                  >See the Project</a
+                >
+                <a
+                  href="https://github.com/TravisAlstrand/FEWD_7.2"
+                  target="_blank"
+                  >See the Code</a
+                >
+              </div>
+            </div>
+          </div>
 
-                    <div class="project-card">
-                        <img class="project-img 2" src="img/Newsletter-Signup.png" alt="Screen shot of web form project">
-                        <p>Web Form Project</p>
-                    </div>
+          <div class="project-card">
+            <img
+              class="project-img 2"
+              src="img/FEWD-P3.png"
+              alt="Screen shot of web form project"
+            />
+            <p>Web Form Project</p>
+          </div>
 
-                    <div id="project2" class="project-modal pm2" style="display:none">
-                        <div class="modal-content-container">
-                            <h3>Web Form Project</h3>
-                            <button class="modal-close-btn" 
-                                aria-controls="project2">
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <img class="modal-img" src="img/Newsletter-Signup.png" alt="Screen shot of web form project">
-                            <p>A responsive newsletter sign-up form.</p>
-                            <p>Utilizes HTML, CSS and JAVASCRIPT.</p>
-                            <div class="modal-links">
-                                <a href="https://travisalstrand.github.io/techdegree-project-3/" target="_blank">See the Project</a>
-                                <a href="https://github.com/TravisAlstrand/techdegree-project-3" target="_blank">See the Code</a>
-                            </div>
-                        </div>
-                    </div>
+          <div id="project2" class="project-modal pm2" style="display: none">
+            <div class="modal-content-container">
+              <h3>Web Form Project</h3>
+              <button class="modal-close-btn" aria-controls="project2">
+                <span class="sr-only">Close</span>
+              </button>
+              <img
+                class="modal-img"
+                src="img/FEWD-P3.png"
+                alt="Screen shot of web form project"
+              />
+              <p>A responsive newsletter sign-up form.</p>
+              <p>Utilizes HTML, CSS and JAVASCRIPT.</p>
+              <div class="modal-links">
+                <a
+                  href="https://travisalstrand.github.io/FEWD_3.2/"
+                  target="_blank"
+                  >See the Project</a
+                >
+                <a
+                  href="https://github.com/TravisAlstrand/FEWD_3.2"
+                  target="_blank"
+                  >See the Code</a
+                >
+              </div>
+            </div>
+          </div>
 
-                    <div class="project-card">
-                        <img class="project-img 3" src="img/Wheel-of-Success.png" alt="Screen shot of guess the phrase project">
-                        <p>Guess The Phrase Project</p>
-                    </div>
+          <div class="project-card">
+            <img
+              class="project-img 3"
+              src="img/FEWD-P6.png"
+              alt="Screen shot of guess the phrase project"
+            />
+            <p>Guess The Phrase Project</p>
+          </div>
 
-                    <div id="project3" class="project-modal pm3" style="display:none">
-                        <div class="modal-content-container">
-                            <h3>Guess The Phrase Project</h3>
-                            <button class="modal-close-btn" 
-                                aria-controls="project3">
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <img class="modal-img" src="img/Wheel-of-Success.png" alt="Screen shot of guess the phrase project">
-                            <p>An interactive phrase guessing game.</p>
-                            <p>Utilizes HTML, CSS and JAVASCRIPT.</p>
-                            <div class="modal-links">
-                                <a href="https://travisalstrand.github.io/techdegree-project-6/" target="_blank">See the Project</a>
-                                <a href="https://github.com/TravisAlstrand/techdegree-project-6" target="_blank">See the Code</a>
-                            </div>
-                        </div>
-                    </div>
+          <div id="project3" class="project-modal pm3" style="display: none">
+            <div class="modal-content-container">
+              <h3>Guess The Phrase Project</h3>
+              <button class="modal-close-btn" aria-controls="project3">
+                <span class="sr-only">Close</span>
+              </button>
+              <img
+                class="modal-img"
+                src="img/FEWD-P6.png"
+                alt="Screen shot of guess the phrase project"
+              />
+              <p>An interactive phrase guessing game.</p>
+              <p>Utilizes HTML, CSS and JAVASCRIPT.</p>
+              <div class="modal-links">
+                <a
+                  href="https://travisalstrand.github.io/FEWD_6.2/"
+                  target="_blank"
+                  >See the Project</a
+                >
+                <a
+                  href="https://github.com/TravisAlstrand/FEWD_6.2"
+                  target="_blank"
+                  >See the Code</a
+                >
+              </div>
+            </div>
+          </div>
 
-                    <div class="project-card">
-                        <img class="project-img 4" src="img/Interactive-Photo-Gallery.png" alt="Screen shot of photo gallery project">
-                        <p>Interactive Photo Gallery Project</p>
-                    </div>
+          <div class="project-card">
+            <img
+              class="project-img 4"
+              src="img/FEWD-P5.png"
+              alt="Screen shot of photo gallery project"
+            />
+            <p>Interactive Photo Gallery Project</p>
+          </div>
 
-                    <div id="project4" class="project-modal pm4" style="display:none">
-                        <div class="modal-content-container">
-                            <h3>Interactive Photo Gallery Project</h3>
-                            <button class="modal-close-btn" 
-                                aria-controls="project4">
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <img class="modal-img" src="img/Interactive-Photo-Gallery.png" alt="Screen shot of photo gallery project">
-                            <p>An interactive photo gallery.</p>
-                            <p>Utilizes HTML, CSS, JAVASCRIPT and BAGUETTEBOX.JS.</p>
-                            <div class="modal-links">
-                                <a href="https://travisalstrand.github.io/techdegree-project-5/" target="_blank">See the Project</a>
-                                <a href="https://github.com/TravisAlstrand/techdegree-project-5" target="_blank">See the Code</a>
-                            </div>
-                        </div>
-                    </div>
+          <div id="project4" class="project-modal pm4" style="display: none">
+            <div class="modal-content-container">
+              <h3>Interactive Photo Gallery Project</h3>
+              <button class="modal-close-btn" aria-controls="project4">
+                <span class="sr-only">Close</span>
+              </button>
+              <img
+                class="modal-img"
+                src="img/FEWD-P5.png"
+                alt="Screen shot of photo gallery project"
+              />
+              <p>An interactive photo gallery.</p>
+              <p>Utilizes HTML, CSS, JAVASCRIPT and BAGUETTEBOX.JS.</p>
+              <div class="modal-links">
+                <a
+                  href="https://travisalstrand.github.io/FEWD_5.2/"
+                  target="_blank"
+                  >See the Project</a
+                >
+                <a
+                  href="https://github.com/TravisAlstrand/FEWD_5.2"
+                  target="_blank"
+                  >See the Code</a
+                >
+              </div>
+            </div>
+          </div>
 
-                    <div class="project-card">
-                        <img class="project-img 5" src="img/Employee-Directory.png" alt="Screen shot of employee directory project">
-                        <p>API Employee Directory Project</p>
-                    </div>
+          <div class="project-card">
+            <img
+              class="project-img 5"
+              src="img/FEWD-P8.png"
+              alt="Screen shot of employee directory project"
+            />
+            <p>API Employee Directory Project</p>
+          </div>
 
-                    <div id="project5" class="project-modal pm5" style="display:none">
-                        <div class="modal-content-container">
-                            <h3>API Employee Directory Project</h3>
-                            <button class="modal-close-btn" 
-                                aria-controls="project5">
-                                <span class="sr-only">Close</span>
-                            </button>
-                            <img class="modal-img" src="img/Employee-Directory.png" alt="Screen shot of employee directory project">
-                            <p>An interactive employee directory utilizing an API.</p>
-                            <p>Utilizes HTML, CSS, JAVASCRIPT and the Random User API</p>
-                            <div class="modal-links">
-                                <a href="https://travisalstrand.github.io/techdegree-project-8/" target="_blank">See the Project</a>
-                                <a href="https://github.com/TravisAlstrand/techdegree-project-8" target="_blank">See the Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div id="project5" class="project-modal pm5" style="display: none">
+            <div class="modal-content-container">
+              <h3>API Employee Directory Project</h3>
+              <button class="modal-close-btn" aria-controls="project5">
+                <span class="sr-only">Close</span>
+              </button>
+              <img
+                class="modal-img"
+                src="img/FEWD-P8.png"
+                alt="Screen shot of employee directory project"
+              />
+              <p>An interactive employee directory utilizing an API.</p>
+              <p>Utilizes HTML, CSS, JAVASCRIPT and the Random User API</p>
+              <div class="modal-links">
+                <a
+                  href="https://travisalstrand.github.io/FEWD_8.2/"
+                  target="_blank"
+                  >See the Project</a
+                >
+                <a
+                  href="https://github.com/TravisAlstrand/FEWD_8.2"
+                  target="_blank"
+                  >See the Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <hr>
+      <hr />
 
-            <!-- resume section -->
-            <section id="resume">
-                <h2>My Resume</h2>
-                <p>Resume coming soon!</p>
-            </section>
+      <!-- resume section -->
+      <section id="resume">
+        <h2>My Resume</h2>
+        <p>Resume coming soon!</p>
+      </section>
 
-            <hr>
+      <hr />
 
-            <!-- contact me section -->
-            <section id="contact-me">
-                <h2>How To Contact Me</h2>
-                <div class="contact-container">
-                    <p>Please feel free to email me anytime at</p>
-                    <a class="bold" href="mailto:travisalstrand@gmail.com">travisalstrand@gmail.com</a>
-                </div>
-            </section>
+      <!-- contact me section -->
+      <section id="contact-me">
+        <h2>How To Contact Me</h2>
+        <div class="contact-container">
+          <p>Please feel free to email me anytime at</p>
+          <a class="bold" href="mailto:travisalstrand@gmail.com"
+            >travisalstrand@gmail.com</a
+          >
+        </div>
+      </section>
 
-            <hr>
-
-        </main>
-        <footer>
-            <ul>
-                <li>
-                    <a href="https://github.com/TravisAlstrand" class="social-link" target="_blank" aria-label="Github link">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                            viewBox="0 0 291.32 291.32" style="enable-background:new 0 0 291.32 291.32;" xml:space="preserve" class="social-icon">
-                            <g>
-                                <path d="M145.66,0C65.219,0,0,65.219,0,145.66c0,80.45,65.219,145.66,145.66,145.66
+      <hr />
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/TravisAlstrand"
+            class="social-link"
+            target="_blank"
+            aria-label="Github link"
+          >
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 291.32 291.32"
+              style="enable-background: new 0 0 291.32 291.32"
+              xml:space="preserve"
+              class="social-icon"
+            >
+              <g>
+                <path
+                  d="M145.66,0C65.219,0,0,65.219,0,145.66c0,80.45,65.219,145.66,145.66,145.66
                                     s145.66-65.21,145.66-145.66C291.319,65.219,226.1,0,145.66,0z M186.462,256.625c-0.838-11.398-1.775-25.518-1.83-31.235
                                     c-0.364-4.388-0.838-15.549-11.434-22.677c42.068-3.523,62.087-26.774,63.526-57.499c1.202-17.497-5.754-32.883-18.107-45.3
                                     c0.628-13.282-0.401-29.023-1.256-35.941c-9.486-2.731-31.608,8.949-37.79,13.947c-13.037-5.062-44.945-6.837-64.336,0
@@ -276,16 +450,17 @@
                                     c-11.188-13.847-21.23-9.832-21.849-9.614c-0.601,0.218-1.056,1.092-0.992,1.511c0.564,2.986,6.655,6.018,6.955,6.263
                                     c8.257,6.154,11.316,17.27,13.2,20.438c11.844,19.473,39.374,11.398,39.638,11.562c0.018,1.702-0.191,16.032-0.355,27.184
                                     C64.245,245.992,27.311,200.2,27.311,145.66c0-65.365,52.984-118.348,118.348-118.348S264.008,80.295,264.008,145.66
-                                    C264.008,196.668,231.69,239.992,186.462,256.625z"/>
-                            </g>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-            <a class="to-top bold" href="#">Back to Top</a>
-        </footer>
-        <!-- link to js files -->
-        <script src="js/nav.js" defer></script>
-        <script src="js/modal.js" defer></script>
-    </body>
+                                    C264.008,196.668,231.69,239.992,186.462,256.625z"
+                />
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="to-top bold" href="#">Back to Top</a>
+    </footer>
+    <!-- link to js files -->
+    <script src="js/nav.js" defer></script>
+    <script src="js/modal.js" defer></script>
+  </body>
 </html>
